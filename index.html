@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      color: #fff;
+      text-decoration: none;
+      border: 2px solid #fff;
+      border-radius: 12px;
+      transition: 0.3s ease;
+      position: relative;
+    }
+
+    .btn:hover {
+      color: #000;
+      background: #fff;
+      box-shadow: 0 0 20px #fff, 0 0 40px #fff;
+    }
+
+    /* Glow effect */
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(45deg, #fff, #666, #fff);
+      z-index: -1;
+      filter: blur(10px);
+      opacity: 0;
+      transition: 0.3s;
+      border-radius: 12px;
+    }
+
+    .btn:hover::before {
+      opacity: 1;
+    }
+
+    .discord {
+      border-color: #5865F2;
+    }
+
+    .discord:hover {
+      background: #5865F2;
+      box-shadow: 0 0 20px #5865F2, 0 0 40px #5865F2;
+    }
+
+    .roblox {
+      border-color: #ff0000;
+    }
+
+    .roblox:hover {
+      background: #ff0000;
+      box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Portfolio</h1>
+
+    <a class="btn discord" href="https://discord.com" target="_blank">
+      bankai919
+    </a>
+
+    <br>
+
+    <a class="btn roblox" href="https://www.roblox.com/users/4830569973/profile" target="_blank">
+      Roblox
+    </a>
+
+  </div>
+</body>
+</html>
